@@ -3,24 +3,14 @@
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.10426864741421214 -0.0891471141458251 0.9905457289827069 4.460531446781502
-  position 58.09677655924633 47.54200992005993 5.3467076802212965
-}
-E-puck {
-  hidden position_0_0 70.30170483459348
-  hidden position_0_1 77.1971072895987
-  hidden rotation_1 0 -1 0 5.096518851561559
-  hidden rotation_2 0 0.9999999999999999 0 1.7988836034436673
-  translation 53.2872 28.599 -0.000215041
-  rotation 0.0009148966789392751 0.0009692583714551758 0.9999991117507436 2.3435387149063027
-  name "e-puck(1)"
+  orientation 0.1841004542579278 0.26541803288063537 -0.9463933064872124 1.314013399490619
+  position -3.5151813715253173 8.781561705401678 5.09497940373109
 }
 TexturedBackground {
 }
@@ -19581,6 +19571,24 @@ Wall {
   size 0.1 0.5 1
 }
 Wall {
+  translation 51.9872 28.7763 0.268987
+  rotation -0.5773539358383719 -0.577352935838483 -0.5773439358394832 -2.094375307179586
+  name "wall(255)"
+  size 0.1 0.5 1
+}
+Wall {
+  translation 50.2572 28.7763 0.268987
+  rotation -0.5773539358383719 -0.577352935838483 -0.5773439358394832 -2.094375307179586
+  name "wall(257)"
+  size 0.1 0.5 1
+}
+Wall {
+  translation 51.1872 28.7763 0.268987
+  rotation -0.5773539358383719 -0.577352935838483 -0.5773439358394832 -2.094375307179586
+  name "wall(258)"
+  size 0.1 0.5 1
+}
+Wall {
   translation 54.6172 28.7763 0.268987
   rotation -0.5773539358383719 -0.577352935838483 -0.5773439358394832 -2.094375307179586
   name "wall(569)"
@@ -19640,23 +19648,106 @@ Wall {
   name "wall(204)"
   size 0.1 0.5 1
 }
-E-puck {
-  hidden position_0_0 32785.95214507358
-  hidden position_0_1 49316.79567242433
-  hidden linearVelocity_0 -0.025798643353353374 0.032496677855019265 -297.37713116337756
-  hidden angularVelocity_0 -10.033190826899824 2.7166620334181766 0.3644453389847969
-  hidden rotation_1 0 1 0 0.29121221049517604
-  hidden linearVelocity_1 -0.01154641594351998 0.08223635294382811 -297.3555382676673
-  hidden angularVelocity_1 -7.454893346875995 2.018542846023081 0.2707913687168821
-  hidden rotation_2 0 -1 0 6.208988935427074
-  hidden linearVelocity_2 -0.011546418014644006 0.08223634580501564 -297.3555382712137
-  hidden angularVelocity_2 -7.199488619052415 1.9493875443287827 0.2615140578197065
-  translation -8.70257223976739 8.735246590561708 174982.58881707868
-  rotation -0.04319323017111158 -0.06074295842938351 0.9972184504252974 -1.8398989462449302
-}
 Floor {
-  size 180 180
+  size 120 160
   appearance Parquetry {
     type "dark strip"
   }
+}
+Robot {
+  translation 0.039784715915150426 -2.3323770094602643 0.07520812887083878
+  rotation 0.9999999407840349 -0.00022069172498379212 0.0002640588740117148 2.943970976522259
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 55.701792620476596
+        anchor 0.044984 0.005 -0.02
+      }
+      device [
+        RotationalMotor {
+          name "motor_1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.19498442396188073 0.006468108776911284 -0.020140114531952844
+        rotation 0.6833344729524022 0.25853905290377355 -0.6827968630555376 3.6479616275247375
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.1
+            }
+          }
+        ]
+        boundingObject Cylinder {
+          height 0.01
+          radius 0.1
+        }
+        physics Physics {
+        }
+        linearVelocity -2.836942220263334e-05 -0.312078081952185 -3.871366382349731e-05
+        angularVelocity 3.1208340932754783 -0.0002686859164647715 0.00015029082485714296
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 55.70179372285996
+        anchor -0.045016 0.00507172 -0.02
+      }
+      device [
+        RotationalMotor {
+          name "motor_2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.19501554397799273 0.006694237471792883 -0.02031525048110944
+        rotation 0.6833348074508309 0.25853924729115213 -0.6827964546892877 3.6479628244784434
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.1
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject Cylinder {
+          height 0.01
+          radius 0.1
+        }
+        physics Physics {
+        }
+        linearVelocity -2.8435553943681776e-05 -0.31208305849621126 -4.114874374651714e-05
+        angularVelocity 3.1208350610865687 -0.00024353302776823472 0.0001005634764789978
+      }
+    }
+    Pose {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.08
+            radius 0.185
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Cylinder {
+    height 0.08
+    radius 0.185
+  }
+  physics Physics {
+  }
+  controller "test"
+  linearVelocity -4.490688540301373e-05 -0.31052696464356805 0.004511710121020527
+  angularVelocity -0.01916353474990177 0.0008681929168765611 -0.0016974593874606206
 }
