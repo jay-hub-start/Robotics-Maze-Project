@@ -1,0 +1,287 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/Ramp30deg.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/shapes/protos/TexturedBoxShape.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/protos/SumoInterface.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/balls/protos/Ball.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/StopPanel.proto"
+
+WorldInfo {
+  info [
+    "Rat's life pattern"
+  ]
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+DEF VIEWPOINT Viewpoint {
+  fieldOfView 0.755398
+  orientation -0.6653139731098745 -0.330936503033255 -0.6692072535058727 1.6940970623938203
+  position -25.504776901561 15.25550437955461 -23.47810061433275
+  near 0.01
+}
+Floor {
+  rotation 0.9999875000218669 0 0.004999980001642454 -1.5707996938995747
+  size 80 80
+}
+Ball {
+  translation 2.16 0.94 2.9925
+  rotation 0.4866642633922876 0.3244428422615251 0.8111071056538127 2.819951692240864
+  name "ball(1)"
+  radius 0.9
+}
+StopPanel {
+  translation -25.5719 1.46189 5.28066
+  rotation -0.955083725088671 0.004500378704610854 0.2963019147124477 1.69615
+  color 0.576471 0.9 0.576471
+}
+Ramp30deg {
+  translation -4.95077 0.980003 9.58993
+  rotation -2.6535299999851575e-06 0.9999999999944065 -2.036119999988611e-06 -1.8325953071795862
+  name "ramp 30 degrees(1)"
+}
+Ramp30deg {
+  translation -2.14565 1.27 1.75775
+  rotation 2.653529999989055e-06 -0.9999999999958753 1.0991299999954664e-06 2.3562
+  name "ramp 30 degrees(12)"
+}
+Ramp30deg {
+  translation -7.27932 0.92 -5.66712
+  rotation -2.653529999990658e-06 0.9999999999964795 3.961199999986054e-12 3.14159
+  name "ramp 30 degrees(18)"
+}
+Ramp30deg {
+  translation -2.55142 0.920004 -5.42513
+  rotation 2.6535299999904964e-06 -0.9999999999964184 -3.493489999987488e-07 -2.8797953071795863
+  name "ramp 30 degrees(32)"
+}
+Ramp30deg {
+  translation -7.06488 0.919998 -3.80664
+  rotation 2.653529999981316e-06 -0.9999999999929587 -2.6535399999813156e-06 -1.5707953071795862
+  name "ramp 30 degrees(22)"
+}
+Ramp30deg {
+  translation -4.65659 -468.29 -2.90684
+  rotation -0.7071067811858749 1.3793195731696912e-06 -0.7071067811858749 3.14159
+  name "ramp 30 degrees(34)"
+}
+Ramp30deg {
+  translation -9.92465 0.980005 -2.85595
+  rotation 2.653529999981316e-06 -0.9999999999929587 2.6535199999813155e-06 1.5708
+  name "ramp 30 degrees(19)"
+}
+Ramp30deg {
+  translation -13.2134 0.980011 -1.31046
+  rotation 2.6535299999747915e-06 -0.9999999999905 3.4581399999671476e-06 1.309
+  name "ramp 30 degrees(13)"
+}
+Ramp30deg {
+  translation -24.9784 0.979947 5.27923
+  rotation 2.6535299999747915e-06 -0.9999999999905 3.4581399999671476e-06 1.309
+  name "ramp 30 degrees(39)"
+}
+Ramp30deg {
+  translation -19.5458 0.980001 -0.393162
+  rotation -2.653529999989055e-06 0.9999999999958753 -1.0991299999954664e-06 -2.3561953071795863
+  name "ramp 30 degrees(14)"
+}
+Ramp30deg {
+  translation -13.8897 0.979982 4.50935
+  rotation 2.653529999860541e-06 -0.999999999947444 9.903069999479534e-06 0.523601
+  name "ramp 30 degrees(15)"
+}
+Ramp30deg {
+  translation -10.575 1.39998 3.18568
+  rotation -2.6535299999362087e-06 0.9999999999759599 -6.406169999845995e-06 -0.7854053071795866
+  name "ramp 30 degrees(33)"
+}
+Ramp30deg {
+  translation -18.1907 0.979982 5.12531
+  rotation -2.6535299999362083e-06 0.9999999999759597 6.406209999845992e-06 0.785396
+  name "ramp 30 degrees(35)"
+}
+Ramp30deg {
+  translation -10.4936 0.979999 8.25125
+  rotation 2.6535299999626324e-06 -0.9999999999859177 4.596039999935277e-06 1.0472
+  name "ramp 30 degrees(16)"
+}
+Ramp30deg {
+  translation -8.92248 0.839986 13.1361
+  rotation 2.653529999981316e-06 -0.9999999999929587 2.6535199999813155e-06 1.5708
+  name "ramp 30 degrees(17)"
+}
+Ramp30deg {
+  translation -0.155935 1.52 2.13264
+  rotation -2.653519999962632e-06 0.9999999999859177 4.596019999935278e-06 1.0472
+  name "ramp 30 degrees(2)"
+}
+Ramp30deg {
+  translation -4.41391 1.16 19.8729
+  rotation -2.6535099999747922e-06 0.9999999999905003 3.4581199999671488e-06 1.309
+  name "ramp 30 degrees(3)"
+}
+Ramp30deg {
+  translation -6.53882 1.16 19.3025
+  rotation -2.6535199999851572e-06 0.9999999999944065 -2.036119999988611e-06 -1.8325953071795862
+  name "ramp 30 degrees(11)"
+}
+Ramp30deg {
+  translation -9.75458 0.94 18.4452
+  rotation -2.663109999985076e-06 0.999999999994396 -2.028759999988631e-06 -1.8325953071795862
+  name "ramp 30 degrees(7)"
+}
+Ramp30deg {
+  translation 0.177257 1.16 20.9396
+  rotation 2.653509999962633e-06 -0.9999999999859179 -4.5960099999352795e-06 -1.0472053071795866
+  name "ramp 30 degrees(8)"
+}
+Ramp30deg {
+  translation -8.53704 0.94 22.935
+  rotation -2.6631099999363046e-06 0.9999999999760825 -6.3830199998473344e-06 -0.785395307179586
+  name "ramp 30 degrees(9)"
+}
+Ramp30deg {
+  translation -3.93178 1.17 24.0997
+  rotation 2.653489999451692e-06 -0.9999999997933635 -2.01551999958352e-05 -0.2618053071795865
+  name "ramp 30 degrees(10)"
+}
+Ramp30deg {
+  translation 2.27406 1.08 -5.04519
+  rotation -2.653519999989055e-06 0.9999999999958753 1.0991199999954664e-06 2.35619
+  name "ramp 30 degrees(4)"
+}
+Ramp30deg {
+  translation -3.59917 0.99 11.5094
+  rotation 2.6660099999744957e-06 -0.9999999999904337 -3.467709999966827e-06 -1.3089953071795861
+  name "ramp 30 degrees(5)"
+}
+Ramp30deg {
+  translation 1.96846 1.13 15.8719
+  rotation -2.6535099999813165e-06 0.999999999992959 2.6535099999813165e-06 1.5708
+  name "ramp 30 degrees(6)"
+}
+Ramp30deg {
+  translation -3.54238 1.24 13.5267
+  rotation -2.563469999865544e-06 0.9999999999475491 -9.916169999479888e-06 -0.5235853071795864
+  name "ramp 30 degrees(23)"
+}
+Ramp30deg {
+  translation -0.950889 1.43 12.1376
+  rotation -2.6535099999747922e-06 0.9999999999905003 3.4581199999671488e-06 1.309
+  name "ramp 30 degrees(24)"
+}
+Ramp30deg {
+  translation 2.8339 1.06 10.3752
+  rotation 2.6535099999747922e-06 -0.9999999999905003 -3.4581199999671488e-06 -1.3089953071795861
+  name "ramp 30 degrees(25)"
+}
+Ramp30deg {
+  translation 3.94002 1.19 5.0493
+  rotation -2.6535099999747922e-06 0.9999999999905003 3.4581199999671488e-06 1.309
+  name "ramp 30 degrees(26)"
+}
+Ball {
+  translation 0 -22.67 0.1625
+}
+Ramp30deg {
+  translation 4.26104 1.16 -0.320654
+  rotation -2.6535099999813165e-06 0.999999999992959 2.6535099999813165e-06 1.5708
+  name "ramp 30 degrees(27)"
+}
+Ramp30deg {
+  translation 16811 1.20925 -2.96537
+  rotation 2.653509999990658e-06 -0.9999999999964795 -9.58921999996624e-09 3.14159
+  name "ramp 30 degrees(28)"
+}
+Ramp30deg {
+  translation -5.69808 1.21087 5.8853
+  rotation 0.9238789002815947 1.7343098128081409e-06 -0.3826849586950911 3.14159
+  name "ramp 30 degrees(29)"
+}
+Ramp30deg {
+  translation -1.64486 1.14087 16.0726
+  rotation -0.9659252822103356 -1.5746004600444075e-06 0.25882107561866735 3.14159
+  name "ramp 30 degrees(37)"
+}
+Ramp30deg {
+  translation -2.60958 108.681 16.7231
+  rotation -0.9659252822103356 -1.5746004600444075e-06 0.25882107561866735 3.14159
+  name "ramp 30 degrees(36)"
+}
+Ramp30deg {
+  translation -0.939439 1.38 7.00592
+  rotation -2.6535099999851582e-06 0.9999999999944067 2.0361099999886114e-06 1.8326
+  name "ramp 30 degrees(30)"
+}
+Ramp30deg {
+  translation -6.48385 1.13 1.88609
+  rotation -2.6535099999851582e-06 0.9999999999944067 2.0361099999886114e-06 1.8326
+  name "ramp 30 degrees(38)"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF R0 E-puck {
+  hidden linearVelocity_0 0.8084032888936292 -0.004042417719955662 0.0045864607574914356
+  hidden angularVelocity_0 -0.03319086198483323 -0.017527272748870004 -0.016247631216538667
+  hidden translation_1 0 0.026000000000000006 0.02
+  hidden rotation_1 0 1 0 2.721240927912293
+  hidden linearVelocity_1 0.8084858434381509 -0.004041848688296085 0.004420784384610827
+  hidden angularVelocity_1 0.22104102473555762 -0.0002538895292143647 -40.424797436208806
+  hidden translation_2 0 -0.025999999999999992 0.02
+  hidden rotation_2 0 -1 0 0.12112737408140947
+  hidden linearVelocity_2 0.8084830946334103 -0.004043308639127994 0.004420768585095538
+  hidden angularVelocity_2 0.22103983244157321 -0.00025409188883429584 -40.42466006514262
+  translation 1071.74091538337 -5.358797117839699 2.9576306439304596
+  rotation -0.9999872011876842 -0.0015675722644895303 -0.00481042389164659 1.5707090606804353
+  name "Rat0"
+  controller "Rat0"
+  battery [
+    0, 100, 1000
+  ]
+}
+DEF R1 E-puck {
+  hidden linearVelocity_0 0.10878220023956534 -0.0005539510121931253 0.4777177934227354
+  hidden angularVelocity_0 12.911050232630686 -0.08077136363834285 -2.9400970800726958
+  hidden translation_1 0 0.026000000000000006 0.02
+  hidden rotation_1 0 -1 0 0.00040380621897981094
+  hidden linearVelocity_1 0.044242988731279145 0.2091706405749652 0.1885406957996395
+  hidden angularVelocity_1 12.911050255854366 -0.08077118351162288 -2.940096939694584
+  hidden translation_2 0 -0.026 0.02
+  hidden rotation_2 0 1 0 0.00040279354221640473
+  hidden linearVelocity_2 0.17332150217648948 -0.2102788374763242 0.7668952962504536
+  hidden angularVelocity_2 12.911050204264715 -0.08077157191926412 -2.940097242258547
+  translation 215.75771230972654 -1.060531257202725 862.1172307556249
+  rotation -0.6057267439597307 -0.24431034441259933 0.7572367973526775 2.5386597619636624
+  name "Rat1"
+  controller "Rat1"
+  battery [
+    0, 100, 1000
+  ]
+}
+Shape {
+}
+Ramp30deg {
+  translation -1.50886 97.42 -0.454767
+  rotation -0.8660253028382757 -2.4166908450867265e-08 0.5000001748438415 3.14159
+  name "ramp 30 degrees(20)"
+}
+Ramp30deg {
+  translation -12.5637 1.12 -6.14781
+  rotation -0.9914448886103518 8.101529089786547e-07 -0.13052598533529827 3.14159
+  name "ramp 30 degrees(21)"
+}
+Ramp30deg {
+  translation -16.3222 1.13 -4.45795
+  rotation -0.8660253028382757 -2.4166908450867265e-08 0.5000001748438415 3.14159
+  name "ramp 30 degrees(31)"
+}
+TexturedBoxShape {
+  size 2 5 0.9
+}
+SumoInterface {
+}
