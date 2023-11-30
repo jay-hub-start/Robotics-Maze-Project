@@ -11,8 +11,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.23062350250402153 0.03050404793432677 0.9725648066593804 2.90678672814977
-  position 180.06982651500806 -8.443765205832392 71.99236857700721
+  orientation -0.2613308931744374 -0.20068727744445772 0.9441561210650399 4.4150289973301575
+  position 54.281148175112556 43.19980117829986 6.579749345214753
 }
 TexturedBackground {
 }
@@ -6966,20 +6966,13 @@ Wall {
   name "wall(569)"
   size 0.1 0.5 1
 }
-Floor {
-  translation -34 -73 0
-  name "floor(1)"
-  size 2 2
-  appearance Parquetry {
-  }
-}
 Robot {
-  translation -32.304551692518636 -72.5494286462247 0.07567405079540242
-  rotation -0.7952723974118814 0.6062494729760026 -0.001841312324850017 -3.1323870803952714
+  translation 54.1049 31.8677 0.0756297
+  rotation 0.9998857345253852 -0.01404619627066532 0.005587688516441024 3.14069
   children [
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 32433.10567483558
+        position 32567.782115686412
         anchor 0.044984 0.005 -0.02
       }
       device [
@@ -6988,8 +6981,8 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.1964009388695306 0.006717678990677548 -0.019675165218122948
-        rotation -0.6707687795648142 -0.31462440849772205 0.6716254357442011 2.5360795641567675
+        translation 0.19640093886953053 0.0032959924841732048 -0.01960974734268945
+        rotation -0.2215906115388865 0.9489984564830175 0.2242755681537175 4.658261916578753
         children [
           Shape {
             appearance PBRAppearance {
@@ -7010,7 +7003,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 31946.354081453926
+        position 32871.787993371356
         anchor -0.045016 0.00507172 -0.02
       }
       device [
@@ -7019,8 +7012,8 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation -0.19643814593325723 0.0034742969450026373 -0.017641108876802262
-        rotation 0.4436817788278303 -0.7684022269935055 -0.46119897732713316 1.83562732675977
+        translation -0.19643814593325715 0.0031493513904008955 -0.022102528638702976
+        rotation -0.6987382928676847 0.09088571813433885 0.7095805692939732 3.341212481687588
         children [
           Shape {
             appearance PBRAppearance {
@@ -7042,6 +7035,8 @@ Robot {
     }
     Pose {
       children [
+        GPS {
+        }
         SharpGP2Y0A02YK0F {
           rotation 0 0 1 -1.9634996938995748
           name "ps3"
@@ -7094,8 +7089,6 @@ Robot {
   physics Physics {
   }
   controller "my_controller"
-  linearVelocity -0.5434021220775158 -0.10813965567003447 -0.006332146754564996
-  angularVelocity -0.017144662159428004 -0.12278513909166945 2.0554715352462276
 }
 OilBarrel {
   translation 51.38 8.16 0.5
@@ -7378,4 +7371,7 @@ OilBarrel {
 }
 Floor {
   size 140 160
+  appearance Parquetry {
+    type "dark strip"
+  }
 }
