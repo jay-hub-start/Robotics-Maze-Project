@@ -4,7 +4,7 @@ from controller import DistanceSensor
 def Wall_follower(epuck):
 
     timestep = int(epuck.getBasicTimeStep())
-    max_speed = 6.0
+    max_speed = 10.0
     
     left_motor = epuck.getDevice('motor_1')
     right_motor = epuck.getDevice('motor_2')
@@ -57,4 +57,4 @@ def Wall_follower(epuck):
 if __name__ == "__main__":
 
     epuck = Robot()
-    Wall_follower(epuck)a
+    Wall_follower(epuck)

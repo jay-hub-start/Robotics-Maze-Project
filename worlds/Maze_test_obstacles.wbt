@@ -7,6 +7,7 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/sharp/protos/SharpGP2Y0A02YK0F.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
 
 WorldInfo {
 }
@@ -12848,12 +12849,14 @@ Floor {
   }
 }
 Robot {
-  translation -33.03368045143047 -72.23929174858038 0.07650152280814078
-  rotation -0.9660395323883765 0.2583409155162579 0.005252926143455434 -3.1346053526205737
+  translation -33.4426 -72.5327 0.0800483
+  rotation -0.6227878955189888 0.7823816527899142 -0.0037665067039918012 -3.1347305201947244
   children [
+    E-puckGroundSensors {
+    }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 32399.876856751507
+        position 32404.516504534557
         anchor 0.044984 0.005 -0.02
       }
       device [
@@ -12862,8 +12865,8 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.19640093886953072 0.004903570211988463 -0.021745462702699832
-        rotation 0.6644920231361717 -0.33734228895435237 -0.6668212138732809 2.489577784528205
+        translation 0.19640093886953075 0.0032661613629606906 -0.019776970111326266
+        rotation -0.26441047663406775 0.9266718113911067 0.2671450052298763 4.634624711456542
         children [
           Shape {
             appearance PBRAppearance {
@@ -12880,13 +12883,11 @@ Robot {
         }
         physics Physics {
         }
-        linearVelocity -7.344117406373434e-06 -1.0908471649453262e-05 7.826618728792665e-07
-        angularVelocity 0.00012763077563672002 -7.700552039025568e-05 -4.0218641526853857e-05
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 31689.150641684304
+        position 31726.7355573424
         anchor -0.045016 0.00507172 -0.02
       }
       device [
@@ -12895,8 +12896,8 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation -0.19643814593325729 0.0026707627368241903 -0.018466529436819368
-        rotation -0.5493385462719687 0.6147211039049932 0.565990393905786 4.244119382831933
+        translation -0.19643814593325726 0.002861137022648587 -0.018202932764757436
+        rotation -0.5234616740964488 0.6587360455231728 0.5404208527440773 4.305400486598195
         children [
           Shape {
             appearance PBRAppearance {
@@ -12914,8 +12915,6 @@ Robot {
         }
         physics Physics {
         }
-        linearVelocity 7.023004265798024e-06 1.4004767368957186e-05 -7.306928995649202e-07
-        angularVelocity -0.0001476555828034378 8.158984322538082e-05 -3.726951521185592e-05
       }
     }
     Pose {
@@ -12971,9 +12970,7 @@ Robot {
   }
   physics Physics {
   }
-  controller "Wall_Follow_Obs"
-  linearVelocity -2.1514591470153756e-06 4.010993292976782e-06 1.8900684599470982e-07
-  angularVelocity -6.719808564347734e-06 7.526439529578693e-07 -3.774747909145744e-05
+  controller "my_controller"
 }
 OilBarrel {
   translation 51.38 8.16 0.5
